@@ -20,8 +20,11 @@ export default function Booking() {
       {/* only load at the client side */}
       <ClientCalendar1 />
 
+      {/* load conditionally */}
       {show && <ClientCalendar2 />}
       <button onClick={() => setShow(!show)}>toggle</button>
+
+      {/* <TestCalendar /> */}
 
     </LocalizationProvider>
   )
